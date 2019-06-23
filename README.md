@@ -1,4 +1,4 @@
-# restAssuredWorkshop
+# Rest Assured Workshop
 ## Framework for the restassured workshop
 **I. Installation Notes**
 - Java JDK 12 (latest, minimum version 11):
