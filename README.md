@@ -19,8 +19,8 @@
 
 **II. Configuration:**
 
-intellij ideea:
+Intellij IDEA:
 - Build, Execution, Deployment > Build tools > Gradle > Runner : Platform Test Runner
 
-json-server:
-- open cmd, navigate to projectDir/<db.json> -> json-server db.json
+Run json-server:
+- From project directory, open cmd and run `json-server db.json`
