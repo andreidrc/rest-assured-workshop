@@ -28,5 +28,5 @@ You should see Intellij opening the project, downloading the gradle distribution
 3. Build the project (from menu Build -> Build Project or `Ctrl+F9`) and check that project builds successfully.
 
 ## Running the mock server
-The mock server used to respond to the API calls we'll be making in the exercises.
+The mock server used to respond to the API calls we'll be making in the exercises.  
 From the project directory, run the following command in cmd `json-server db.json`
