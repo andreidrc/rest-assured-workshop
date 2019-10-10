@@ -21,9 +21,9 @@ Introductory workshop for getting acquainted with [REST Assured](http://rest-ass
 ## Importing the project
 1. Clone the project
 `git clone https://github.com/andreidrc/rest-assured-workshop.git`
-2. Import the project
-From Intellij IDEA, select `Open`, browse to the project directory and select the `build.gradle` file.
-Hit `OK` and then select `Open as Project`.
+2. Import the project  
+From Intellij IDEA, select `Open`, browse to the project directory and select the `build.gradle` file.  
+Hit `OK` and then select `Open as Project`.  
 You should see Intellij opening the project, downloading the gradle distribution and all the required dependencies.
 3. Build the project (from menu Build -> Build Project or `Ctrl+F9`) and check that project builds successfully.
 
