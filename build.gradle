@@ -5,9 +5,9 @@ repositories {
 }
 
 dependencies {
-    testCompile("io.rest-assured:rest-assured:4.1.2")
-    testCompile("org.junit.jupiter:junit-jupiter-api:5.5.2")
-    testCompile("org.junit.jupiter:junit-jupiter-engine:5.5.2")
-    testCompile("org.junit.jupiter:junit-jupiter-params:5.5.2")
-    testCompile("com.google.code.gson:gson:2.8.1")
+    compile("io.rest-assured:rest-assured:4.1.2")
+    compile("org.junit.jupiter:junit-jupiter-api:5.5.2")
+    compile("org.junit.jupiter:junit-jupiter-engine:5.5.2")
+    compile("org.junit.jupiter:junit-jupiter-params:5.5.2")
+    compile("com.google.code.gson:gson:2.8.1")
 }
