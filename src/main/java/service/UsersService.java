@@ -14,12 +14,12 @@ import utils.Endpoint;
 
 import static io.restassured.RestAssured.given;
 
-public class Users {
+public class UsersService {
     private static final String USER_ID_PATH_PARAM = "userId";
     private RequestSpecification requestSpecification;
     private ResponseSpecification responseSpecification;
 
-    public Users() {
+    public UsersService() {
         setDefaultSpecifications();
     }
 
