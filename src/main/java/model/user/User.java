@@ -1,7 +1,7 @@
 package model.user;
 
 public class User {
-    private long id;
+    private int id;
     private String name;
     private String username;
     private String email;
@@ -10,67 +10,67 @@ public class User {
     private Address address;
     private Company company;
 
-    private long getId() {
+    public int getId() {
         return id;
     }
 
-    private void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    private String getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    private void setUsername(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
-    private String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    private void setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    private String getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    private void setPhone(String phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
-    private String getWebsite() {
+    public String getWebsite() {
         return website;
     }
 
-    private void setWebsite(String website) {
+    public void setWebsite(String website) {
         this.website = website;
     }
 
-    private Address getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    private void setAddress(Address address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
-    private Company getCompany() {
+    public Company getCompany() {
         return company;
     }
 
-    private void setCompany(Company company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 }

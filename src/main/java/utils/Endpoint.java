@@ -1,3 +1,5 @@
+package utils;
+
 public enum Endpoint {
     USERS("/Users"),
     USER("/Users/{userId}");

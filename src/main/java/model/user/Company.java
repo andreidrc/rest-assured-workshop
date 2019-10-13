@@ -5,27 +5,27 @@ public class Company {
     private String catchphrase;
     private String bs;
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    private String getCatchphrase() {
+    public String getCatchphrase() {
         return catchphrase;
     }
 
-    private void setCatchphrase(String catchphrase) {
+    public void setCatchphrase(String catchphrase) {
         this.catchphrase = catchphrase;
     }
 
-    private String getBs() {
+    public String getBs() {
         return bs;
     }
 
-    private void setBs(String bs) {
+    public void setBs(String bs) {
         this.bs = bs;
     }
 }

@@ -6,35 +6,35 @@ public class Address {
     private String city;
     private String zipcode;
 
-    private String getStreet() {
+    public String getStreet() {
         return street;
     }
 
-    private void setStreet(String street) {
+    public void setStreet(String street) {
         this.street = street;
     }
 
-    private String getSuite() {
+    public String getSuite() {
         return suite;
     }
 
-    private void setSuite(String suite) {
+    public void setSuite(String suite) {
         this.suite = suite;
     }
 
-    private String getCity() {
+    public String getCity() {
         return city;
     }
 
-    private void setCity(String city) {
+    public void setCity(String city) {
         this.city = city;
     }
 
-    private String getZipcode() {
+    public String getZipcode() {
         return zipcode;
     }
 
-    private void setZipcode(String zipcode) {
+    public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
 }

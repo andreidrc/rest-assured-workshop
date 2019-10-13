@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class BaseTest {
     private static final Logger LOG = Logger.getLogger(BaseTest.class.getName());
-    private static final String BASE_URI = "https://localhost:3000";
+    private static final String BASE_URI = "http://localhost:3000";
 
     @BeforeAll
     static void classSetup(TestInfo testInfo) {
