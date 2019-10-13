@@ -76,9 +76,9 @@ public class UsersService {
     }
 
     private void setDefaultResponseSpecification() {
-        ResponseSpecBuilder builder = new ResponseSpecBuilder();
-        builder.expectStatusCode(200);
-        this.responseSpecification = builder.build();
+        this.responseSpecification = new ResponseSpecBuilder()
+            .expectStatusCode(200)
+            .build();
     }
 
     private RestAssuredConfig getGsonMapper() {
