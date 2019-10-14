@@ -9,57 +9,57 @@ import io.restassured.http.ContentType;
 import io.restassured.mapper.ObjectMapperType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import model.user.User;
+import model.Post;
 import utils.Endpoint;
 
 import static io.restassured.RestAssured.given;
 
-public class UsersService {
-    private static final String USER_ID_PATH_PARAM = "userId";
+public class PostsService {
+    private static final String POST_ID_PATH_PARAM = "postId";
     private RequestSpecification requestSpecification;
     private ResponseSpecification responseSpecification;
 
-    public UsersService() {
+    public PostsService() {
         setDefaultSpecifications();
     }
 
-    public User[] getUsers() {
+    public Post[] getPosts() {
         return given()
             .spec(requestSpecification)
-            .get(Endpoint.USERS.getUrl())
-            .body().as(User[].class);
+            .get(Endpoint.POSTS.getUrl())
+            .body().as(Post[].class);
     }
 
-    public User getUser(int id) {
+    public Post getPost(int id) {
         return given()
             .spec(requestSpecification)
-            .pathParam(USER_ID_PATH_PARAM, id)
-            .get(Endpoint.USER.getUrl())
-            .body().as(User.class);
+            .pathParam(POST_ID_PATH_PARAM, id)
+            .get(Endpoint.POST.getUrl())
+            .body().as(Post.class);
     }
 
-    public void addUser(User user) {
+    public void addPost(Post post) {
         given()
             .spec(requestSpecification)
-            .body(user)
-            .post(Endpoint.USERS.getUrl())
+            .body(post)
+            .post(Endpoint.POSTS.getUrl())
             .then().statusCode(201);
     }
 
-    public void updateUser(User user, int userId) {
+    public void updatePost(Post post, int id) {
         given()
             .spec(requestSpecification)
-            .body(user)
-            .pathParam(USER_ID_PATH_PARAM, userId)
-            .put(Endpoint.USER.getUrl())
+            .body(post)
+            .pathParam(POST_ID_PATH_PARAM, id)
+            .put(Endpoint.POST.getUrl())
             .then().spec(responseSpecification);
     }
 
-    public void deleteUser(int userId) {
+    public void deletePost(int id) {
         given()
             .spec(requestSpecification)
-            .pathParam(USER_ID_PATH_PARAM, userId)
-            .delete(Endpoint.USER.getUrl())
+            .pathParam(POST_ID_PATH_PARAM, id)
+            .delete(Endpoint.POST.getUrl())
             .then().spec(responseSpecification);
     }
 
