@@ -27,6 +27,9 @@ Hit `OK` and then select `Open as Project`.
 You should see Intellij opening the project, downloading the gradle distribution and all the required dependencies.
 3. Build the project (from menu Build -> Build Project or `Ctrl+F9`) and check that project builds successfully.
 
+If there are any errors related to missing project SDK, follow these steps to set up a project SDK:  
+https://www.jetbrains.com/help/idea/sdk.html#set-up-jdk
+
 ## Running the mock server
 The mock server will be used to respond to the API calls performed in the exercises.  
 From the project directory, run the following command in cmd `json-server db.json`
