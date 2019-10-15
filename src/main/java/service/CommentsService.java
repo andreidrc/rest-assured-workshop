@@ -9,57 +9,57 @@ import io.restassured.http.ContentType;
 import io.restassured.mapper.ObjectMapperType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import model.Post;
+import model.Comment;
 import utils.Endpoint;
 
 import static io.restassured.RestAssured.given;
 
-public class PostsService {
-    private static final String POST_ID_PATH_PARAM = "postId";
+public class CommentsService {
+    private static final String COMMENT_ID_PATH_PARAM = "commentId";
     private RequestSpecification requestSpecification;
     private ResponseSpecification responseSpecification;
 
-    public PostsService() {
+    public CommentsService() {
         setDefaultSpecifications();
     }
 
-    public Post[] getPosts() {
+    public Comment[] getComments() {
         return given()
             .spec(requestSpecification)
-            .get(Endpoint.POSTS.getUrl())
-            .body().as(Post[].class);
+            .get(Endpoint.COMMENTS.getUrl())
+            .body().as(Comment[].class);
     }
 
-    public Post getPost(int id) {
+    public Comment getComment(int id) {
         return given()
             .spec(requestSpecification)
-            .pathParam(POST_ID_PATH_PARAM, id)
-            .get(Endpoint.POST.getUrl())
-            .body().as(Post.class);
+            .pathParam(COMMENT_ID_PATH_PARAM, id)
+            .get(Endpoint.COMMENT.getUrl())
+            .body().as(Comment.class);
     }
 
-    public void addPost(Post post) {
+    public void addComment(Comment comment) {
         given()
             .spec(requestSpecification)
-            .body(post)
-            .post(Endpoint.POSTS.getUrl())
+            .body(comment)
+            .post(Endpoint.COMMENTS.getUrl())
             .then().statusCode(201);
     }
 
-    public void updatePost(Post post, int id) {
+    public void updateComment(Comment comment, int id) {
         given()
             .spec(requestSpecification)
-            .body(post)
-            .pathParam(POST_ID_PATH_PARAM, id)
-            .put(Endpoint.POST.getUrl())
+            .body(comment)
+            .pathParam(COMMENT_ID_PATH_PARAM, id)
+            .put(Endpoint.COMMENT.getUrl())
             .then().spec(responseSpecification);
     }
 
-    public void deletePost(int id) {
+    public void deleteComment(int id) {
         given()
             .spec(requestSpecification)
-            .pathParam(POST_ID_PATH_PARAM, id)
-            .delete(Endpoint.POST.getUrl())
+            .pathParam(COMMENT_ID_PATH_PARAM, id)
+            .delete(Endpoint.COMMENT.getUrl())
             .then().spec(responseSpecification);
     }
 
