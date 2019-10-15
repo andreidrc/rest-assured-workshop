@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class Ex1Basic {
 
     /*******************************************************
-     * Send a GET request to "https://jsonplaceholder.typicode.com/users"
+     * Send a GET request to "  http://localhost:3000/users"
      * and check that the response has HTTP status code 200
      ******************************************************/
     @Test
@@ -15,7 +15,7 @@ public class Ex1Basic {
 
 
     /*******************************************************
-     * Send a GET request to ""https://jsonplaceholder.typicode.com/incorrect"
+     * Send a GET request to ""  http://localhost:3000/incorrect"
      * and check that the answer has HTTP status code 404
      ******************************************************/
     @Test
