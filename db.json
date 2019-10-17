@@ -1,5 +1,5 @@
 {
-  "Posts": [
+  "posts": [
     {
       "userId": 1,
       "id": 1,
@@ -601,7 +601,7 @@
       "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
     }
   ],
-  "Comments": [
+  "comments": [
     {
       "postId": 1,
       "id": 1,
@@ -4103,7 +4103,7 @@
       "body": "perspiciatis quis doloremque\nveniam nisi eos velit sed\nid totam inventore voluptatem laborum et eveniet\naut aut aut maxime quia temporibus ut omnis"
     }
   ],
-  "Albums": [
+  "albums": [
     {
       "userId": 1,
       "id": 1,
@@ -4605,7 +4605,7 @@
       "title": "enim repellat iste"
     }
   ],
-  "Photos": [
+  "photos": [
     {
       "albumId": 1,
       "id": 1,
@@ -39607,7 +39607,7 @@
       "thumbnailUrl": "https://via.placeholder.com/150/6dd9cb"
     }
   ],
-  "Todos": [
+  "todos": [
     {
       "userId": 1,
       "id": 1,
@@ -40809,7 +40809,7 @@
       "completed": false
     }
   ],
-  "Users": [
+  "users": [
     {
       "id": 1,
       "name": "Leanne Graham",

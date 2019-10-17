@@ -1,8 +1,8 @@
 package utils;
 
 public enum Endpoint {
-    COMMENTS("/Comments"),
-    COMMENT("/Comments/{commentId}");
+    COMMENTS("/comments"),
+    COMMENT("/comments/{commentId}");
 
     private final String url;
 
